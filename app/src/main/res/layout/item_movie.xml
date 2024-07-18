@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -22,42 +23,48 @@
                     android:id="@+id/movieImageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/matrix"
+                    tools:src="@drawable/matrix"
                     android:scaleType="centerInside"/>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="20sp"
                     android:orientation="vertical">
                     <TextView
                         android:id="@+id/titleTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
                         android:text="Matrix"
                         android:textSize="24sp"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:background="@color/purple_200"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="Year:"
-                        android:textSize="24sp"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:background="@color/transparent_grey"/>
-                    <TextView
-                        android:id="@+id/yearTextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="2015"
-                        android:textSize="24sp"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:background="@color/transparent_grey"/>
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:text="Year :"
+                            android:textSize="24sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:background="@color/transparent_grey"/>
+                        <TextView
+                            android:id="@+id/yearTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:text="2015"
+                            android:textSize="24sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:background="@color/transparent_grey"/>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>
