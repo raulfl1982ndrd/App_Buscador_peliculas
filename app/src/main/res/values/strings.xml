@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">App_Buscador_peliculas</string>
+
+    <string name="menu_search">Search</string>
+    <string name="empty_movies_title">No Movies to show</string>
+    <string name="empty_movies_advice">Press the magnifying glass to search for a Movie</string>
+
 </resources>
