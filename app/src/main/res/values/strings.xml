@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App_Buscador_peliculas</string>
+    <string name="app_name">Buscador Peliculas</string>
 
     <string name="menu_search">Search</string>
     <string name="empty_movies_title">No Movies to show</string>
